@@ -72,11 +72,31 @@ function addKeyPressHandler() {
     });
 }
 
+function addNumberHandler(thumbnails) {
+    var otterList = [];
+    var i;
+    var size = thumbnails.length;
+
+    for (i = 0; i < size; i++) {
+        otterList[i] = 49 + i;
+    }
+
+    document.addEventListener('keyup', function(event) {
+        event.preventDefault();
+        if (otterList.indexOf(event.keyCode) != -1) {
+            var thisOtter = otterList.indexOf(event.keyCode);
+            setDetailsFromThumb(thumbnails[thisOtter]);
+            showDetails();
+        }
+    });
+}
+
 function initializeEvents() {
     'use strict';
     var thumbnails = getThumbnailsArray();
     thumbnails.forEach(addThumbClickHandler);
     addKeyPressHandler();
+    addNumberHandler(thumbnails);
 }
 
 initializeEvents();
