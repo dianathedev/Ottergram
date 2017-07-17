@@ -27,13 +27,13 @@ This application is written in Javascript and uses JQuery and AJAX </p>
 ### Running the application:
 **Navigate to Project folder in the terminal-**
 
-	> cd CPSC473_Project1
+	> cd Ottergram
 **Type in the following command- to start the json server**
 
 	> json-server --port=3002 --watch db.json
 **Open another terminal and use following commands**
 
-	> cd CPSC473_Project1
+	> cd Ottergram
 	> browser-sync start --server --files "*.html, stylesheets/*.css, scripts/*.js"
 
 **Web server will be up and running on your local machine at -**
