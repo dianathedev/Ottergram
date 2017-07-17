@@ -1,13 +1,10 @@
 ## Overview
 
-<p> Web application that allows students to vote on how likely it is that a given topic will show up on the next test.
-This application is written in Javascript and uses JQuery and AJAX </p>
+<p> Web application that displays images using various techniques.
+This application is written in Javascript and uses HTML and CSS </p>
 
 ## Installation and Execution
 ### Prerequisites
-
-* Node.js
-    <p> For latest version download from https://nodejs.org/en/download/ </p>
 
 * Atom text editor (Any Editor)
     <p> Install at > https://atom.io/ </p>
@@ -21,29 +18,18 @@ This application is written in Javascript and uses JQuery and AJAX </p>
 * Install `npm` Packages:
 <p> Open your terminal and enter the following command </p>
 
-    > npm install -g json-server
     > npm install -g browser-sync
 
 ### Running the application:
 **Navigate to Project folder in the terminal-**
 
 	> cd Ottergram
-**Type in the following command- to start the json server**
 
-	> json-server --port=3002 --watch db.json
 **Open another terminal and use following commands**
 
 	> cd Ottergram
-	> browser-sync start --server --files "*.html, stylesheets/*.css, scripts/*.js"
+	> browser-sync start --server --browser "Google Chrome"--files "stylesheets/*.css, *.html"
 
 **Web server will be up and running on your local machine at -**
 
 	> http://localhost:3000
-
-## Technical Details
-#### Purpose:
-Students can vote on how likely it is that a given topic will show up on the next test.
-
-##### Functionality:
-* Users can register with their school email_id and create a own password
-* Once students registered, they can login to like or dislike a particular topic.
