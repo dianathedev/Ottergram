@@ -1,4 +1,4 @@
-## Overview
+## Ottergram
 
 <p> Web application that displays images using various techniques.
 This application is written in Javascript and uses HTML and CSS </p>
